@@ -1,0 +1,9 @@
+[Dane]
+make = honda
+model = civic
+version = 
+year_from = 2020
+year_to = 2020
+power_from = 
+power_to = 
+powertype = km

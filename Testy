@@ -1,1 +1,64 @@
+IDENTYFIKATOR: FUNC_TEST_004
+NAZWA: Test inicjalizacji instancji AutoScan24
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24 z określonymi parametrami.
+Krok 2: Sprawdź, czy wszystkie przekazane parametry są poprawnie przypisane do atrybutów klasy.
+OCZEKIWANY REZULTAT: Atrybuty instancji odpowiadają przekazanym parametrom.
+WYNIK: POZYTYWNY
 
+IDENTYFIKATOR: FUNC_TEST_005
+NAZWA: Test generowania URLi
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24.
+Krok 2: Wywołaj metodę generate_urls z określoną liczbą stron.
+Krok 3: Sprawdź, czy lista URLi zawiera oczekiwaną liczbę adresów.
+OCZEKIWANY REZULTAT: Lista URLi ma odpowiednią liczbę adresów.
+WYNIK: POZYTYWNY
+
+IDENTYFIKATOR: FUNC_TEST_006
+NAZWA: Test skrobania danych z pojedynczej strony
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24.
+Krok 2: Wywołaj metodę scrape z num_pages ustawionym na 1.
+Krok 3: Sprawdź, czy DataFrame listing_frame został zaktualizowany o dane z pojedynczej strony.
+OCZEKIWANY REZULTAT: listing_frame zawiera dane z jednej strony.
+WYNIK: POZYTYWNY
+
+IDENTYFIKATOR: FUNC_TEST_007
+NAZWA: Test zapisywania danych do pliku CSV
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24 i wykonaj skrobanie danych.
+Krok 2: Wywołaj metodę save_to_csv.
+Krok 3: Sprawdź, czy w określonej lokalizacji pojawił się plik CSV z danymi.
+OCZEKIWANY REZULTAT: Plik CSV został stworzony i zawiera dane.
+WYNIK: POZYTYWNY
+
+IDENTYFIKATOR: FUNC_TEST_008
+NAZWA: Test zakończenia pracy przeglądarki
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24.
+Krok 2: Wywołaj metodę quit_browser.
+Krok 3: Sprawdź, czy proces przeglądarki został zakończony.
+OCZEKIWANY REZULTAT: Proces przeglądarki został poprawnie zakończony.
+WYNIK: POZYTYWNY
+
+
+IDENTYFIKATOR: PERF_TEST_003
+NAZWA: Test szybkości skrobania danych
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24 z określonymi parametrami.
+Krok 2: Rozpocznij stoper przed wywołaniem metody scrape.
+Krok 3: Wywołaj metodę scrape z num_pages ustawionym na określoną liczbę stron.
+Krok 4: Zatrzymaj stoper po zakończeniu skrobania danych.
+Krok 5: Zapisz zmierzony czas i porównaj z oczekiwanym czasem odpowiedzi.
+OCZEKIWANY REZULTAT: Dane są skrobane i zapisywane w oczekiwanym czasie, który zapewnia płynne doświadczenie użytkownika.
+WYNIK: POZYTYWNY
+
+IDENTYFIKATOR: PERF_TEST_004
+NAZWA: Test responsywności interfejsu użytkownika
+SCENARIUSZ:
+Krok 1: Utwórz instancję klasy AutoScan24 na różnych przeglądarkach i urządzeniach.
+Krok 2: Wywołaj metodę scrape na każdej przeglądarce i urządzeniu.
+Krok 3: Obserwuj i zapisz, jak zachowuje się interfejs użytkownika podczas skrobania danych.
+OCZEKIWANY REZULTAT: Interfejs użytkownika jest responsywny na wszystkich testowanych przeglądarkach i urządzeniach.
+WYNIK: POZYTYWNY

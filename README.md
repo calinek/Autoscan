@@ -22,7 +22,6 @@ AutoScout24 Scraper to narzędzie napisane w Pythonie, które automatycznie skra
 - ChromeDriver (lub odpowiedni sterownik przeglądarki)
 
 ## Instalacja
-git clone https://github.com/yourusername/autoscout24-scraper.git
 cd autoscout24-scraper
 pip install -r requirements.txt
 
@@ -52,7 +51,7 @@ Wkład w projekt
 Jeśli chcesz przyczynić się do tego projektu, są mile widziane pull requesty. Prosimy o utworzenie issue przed wysłaniem pull requestu.
 
 Autorzy
-Michał, Mateusz, Michał - Inicjatywa i rozwój projektu
+Michał, Mateusz, Szymon - Inicjatywa i rozwój projektu
 
 
 Kontakt

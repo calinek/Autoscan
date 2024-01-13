@@ -38,11 +38,11 @@ if __name__ == "__main__":
     if not os.path.exists("listings"):
         os.makedirs("listings")
 
-    # Read updated values from the text file
+    
     nazwa_pliku_notatnika = 'INPUT.txt'
     marka_input, model_input, version_input, year_from_input, year_to_input, power_from_input, power_to_input, powertype_input = get_data_from_note(nazwa_pliku_notatnika)
 
-    # Create an instance of AutoScan24 and call the scrape method
+    
     scraper = AutoScan24(marka_input, model_input, version_input, year_from_input, year_to_input, power_from_input, power_to_input, powertype_input)
     scraper.scrape(num_pages, True)
     scraper.save_to_csv(downloaded_listings_file)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
 
 
-# Wczytanie danych z pliku CSV
+# Wczytanie danych z pliku CSv
 data = pd.read_csv('listings/Results.csv')
 
 # Konwersja daty pierwszej rejestracji na format daty i konwersja przebiegu i ceny na numeryczne

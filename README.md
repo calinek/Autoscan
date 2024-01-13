@@ -1,6 +1,6 @@
 # Autoscan
 AutoScout24 Scraper to narzędzie napisane w Pythonie, które automatycznie skrapuje dane o pojazdach z platformy AutoScout24. Używa Selenium WebDriver do nawigacji po stronach, ekstrakcji danych i zapisywania ich w postaci struktur danych Pandas, które następnie mogą być zapisane do pliku CSV.
-Poniżej znajduje się przykładowy szablon README, który możesz użyć na GitHubie do opisania Twojego projektu skrapowania danych z AutoScout24:
+
 
 markdown
 Copy code
